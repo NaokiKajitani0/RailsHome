@@ -7,7 +7,12 @@ Things you may want to cover:
 
 * Ruby version  
 ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]  
-
+* Rails version   
+Rails 7.0.3.1  
+* yarn version  
+1.22.19  
+* npm version  
+6.14.16  
 * System dependencies
 
 * Configuration
