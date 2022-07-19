@@ -26,6 +26,8 @@ Rails 7.0.3.1
 * Services (job queues, cache servers, search engines, etc.)
 
 * reference  
-https://qiita.com/Shuhei_Nakada/items/b59964e56482ac911522
-
+https://qiita.com/Shuhei_Nakada/items/b59964e56482ac911522  
+↳about Environment
+https://blog.eq8.eu/til/how-to-use-bootstrap-5-in-rails-7.html  
+↳install about bootstrap
 * ...
