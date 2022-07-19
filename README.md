@@ -5,8 +5,14 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
-
+* Ruby version  
+ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]  
+* Rails version   
+Rails 7.0.3.1  
+* yarn version  
+1.22.19  
+* npm version  
+6.14.16  
 * System dependencies
 
 * Configuration
@@ -19,6 +25,9 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
+* reference  
+https://qiita.com/Shuhei_Nakada/items/b59964e56482ac911522  
+↳about Environment  
+https://blog.eq8.eu/til/how-to-use-bootstrap-5-in-rails-7.html  
+↳install about bootstrap
 * ...
