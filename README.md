@@ -27,7 +27,7 @@ Rails 7.0.3.1
 
 * reference  
 https://qiita.com/Shuhei_Nakada/items/b59964e56482ac911522  
-↳about Environment
+↳about Environment  
 https://blog.eq8.eu/til/how-to-use-bootstrap-5-in-rails-7.html  
 ↳install about bootstrap
 * ...
