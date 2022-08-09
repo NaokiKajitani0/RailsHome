@@ -1,14 +1,19 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Girls</h1>
-
-<div id="girls">
+<body class="d-flex h-100 text-center text-bg-dark">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <%= link_to "Home", home_path, class:"float-md-start mb-0" %>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <%= link_to "Girls", girls_path, class:"nav-link fw-bold py-1 px-0 active" %>
+            <%= link_to "CostManegement", costs_path, class:"nav-link fw-bold py-1 px-0" %>
+            <%= link_to "Food", "#", class:"nav-link fw-bold py-1 px-0" %>
+          </nav>
+        </div>
+      </header>
+<div id="girls" class="uk-child-width-1-2@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
   <% @girls.each do |girl| %>
     <%= render girl %>
-    <p>
-      <%= link_to "Show this girl", girl %>
-    </p>
   <% end %>
 </div>
-
-<%= link_to "New girl", new_girl_path %>
+  </body>

@@ -1,0 +1,37 @@
+<%= form_with(model: cost) do |form| %>
+  <% if cost.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(cost.errors.count, "error") %> prohibited this cost from being saved:</h2>
+
+      <ul>
+        <% cost.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :year, style: "display: block" %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div>
+    <%= form.label :month, style: "display: block" %>
+    <%= form.number_field :month %>
+  </div>
+
+  <div>
+    <%= form.label :day, style: "display: block" %>
+    <%= form.number_field :day %>
+  </div>
+
+  <div>
+    <%= form.label :costsfile, style: "display: block" %>
+    <%= form.file_field :costsfile %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

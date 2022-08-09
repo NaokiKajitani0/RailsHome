@@ -1,16 +1,11 @@
-<div id="<%= dom_id girl %>">
+<div id="<%= dom_id girl %>" class="uk-card uk-card-default uk-card-hover uk-card-body" >
+  <h3 class="uk-card-title"><%= girl.name %></h3>
+  
   <p>
-    <strong>Name:</strong>
-    <%= girl.name %>
-  </p>
-
-  <p>
-    <strong>Content:</strong>
-    <%= girl.content %>
-  </p>
-  <p>
-    <strong>Image:</strong>
     <%= image_tag(girl.image.to_s) %>
   </p>
 
+  <p>
+    <%= link_to "", girl,class: 'test' %>
+  </p>
 </div>

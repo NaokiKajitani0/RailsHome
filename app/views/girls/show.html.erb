@@ -1,29 +1,15 @@
-<p style="color: green"><%= notice %></p>
+<div id="girls" class="uk-child-width-1-2@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
+  <% @girls.each do |girl| %>
+    <div id="<%= dom_id girl %>" class="uk-card uk-card-default uk-card-hover uk-card-body" >
+      
+      <p>
+        <%= image_tag(girl.image.to_s) %>
+      </p>
 
-<%
-=begin%>
- <%= render @girl %> 
-<%
-=end%>
-
-<p>
-  <strong>Name:</strong>
-  <%= @girl.name %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @girl.content %>
-</p>
-<p>
-  <strong>image:</strong>
-  <%= image_tag(@girl.image.to_s) %>
-</p>
-
-
-<div>
-  <%= link_to "Edit this girl", edit_girl_path(@girl) %> |
-  <%= link_to "Back to girls", girls_path %>
-
-  <%= button_to "Destroy this girl", @girl, method: :delete %>
+      <p>
+        <%= link_to "", girl,class: 'test' %>
+      </p>
+    </div>
+  <% end %>
 </div>
+

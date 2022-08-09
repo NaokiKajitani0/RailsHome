@@ -1,9 +1,14 @@
 class GirlsController < ApplicationController
   before_action :set_girl, only: %i[ show edit update destroy ]
 
+  def home
+    @htmlclass = "h-100"
+  end
+  
   # GET /girls or /girls.json
   def index
     @girls = Girl.all
+    @htmlclass = "h-auto"
   end
 
   # GET /girls/1 or /girls/1.json
@@ -22,7 +27,6 @@ class GirlsController < ApplicationController
   # POST /girls or /girls.json
   def create
     @girl = Girl.new(girl_params)
-
     respond_to do |format|
       if @girl.save
         format.html { redirect_to girl_url(@girl), notice: "Girl was successfully created." }
@@ -60,7 +64,9 @@ class GirlsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_girl
-      @girl = Girl.find(params[:id])
+      girl = Girl.find(params[:id])
+      @girls = Girl.where(name: girl.name)
+      # raise
     end
 
     # Only allow a list of trusted parameters through.
