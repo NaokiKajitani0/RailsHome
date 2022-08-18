@@ -12,6 +12,8 @@ services:
 
   web:
     build: .
+    command: >
+      /bin/bash -c "bundle install && bundle exec rails s -b 0.0.0.0;"
     volumes:
       - .:/RailsHome
     ports:
