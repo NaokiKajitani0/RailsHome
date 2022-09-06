@@ -2,4 +2,8 @@
 //= link_directory ../stylesheets .css
 //= link_tree ../../javascript .js
 //= link_tree ../../../vendor/javascript .js
-//= link bootstrap.min.js
+//= link application.js  
+//= link bootstrap.min.js  
+//= link popper.js  
+//= link COVER/cover.css
+//= link DASHBOARD/dashboard.css

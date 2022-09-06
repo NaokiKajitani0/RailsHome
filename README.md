@@ -31,3 +31,14 @@ https://qiita.com/Shuhei_Nakada/items/b59964e56482ac911522
 https://blog.eq8.eu/til/how-to-use-bootstrap-5-in-rails-7.html  
 ↳install about bootstrap
 * ...
+
+* ToDo
+・/costs/{id}におけるxlsxファイルの内訳の公開（リンク先はLOG内のFileColumnからリンクを飛ばす）
+・costsページにおけるdashboardの非同期通信処理
+　→月/週毎のトータル表示
+
+・同時に複数DBへの接続が可能か調査
+　→具体的には、costsfileがpostされた際に、別DB(costsfileの内訳を保存するDB)にアクセス可能か
+
+・本番環境のやり方
+　→DBの策定を行うべき。

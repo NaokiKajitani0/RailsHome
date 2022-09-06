@@ -4,6 +4,7 @@ class CostsController < ApplicationController
   # GET /costs or /costs.json
   def index
     @costs = Cost.all
+    
   end
 
   # GET /costs/1 or /costs/1.json
@@ -23,9 +24,9 @@ class CostsController < ApplicationController
   # POST /costs or /costs.json
   def create
     @cost = Cost.new(cost_params)
-
     respond_to do |format|
       if @cost.save
+        raise
         format.html { redirect_to costs_path, notice: "Cost was successfully created." }
         format.json { render :index, status: :created }
       else
@@ -72,4 +73,9 @@ class CostsController < ApplicationController
     def cost_params
       params.require(:cost).permit(:year, :month, :day, :costsfile)
     end
+
+    def money_managements_param
+      params.require(:money_managements).permit(:category, :fee, :remarks)
+    end
+
 end
